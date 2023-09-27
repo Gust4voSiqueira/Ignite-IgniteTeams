@@ -10,14 +10,14 @@ import theme from './src/theme'
 import { StatusBar } from 'react-native'
 
 import { Loading } from '@components/index'
-import { Groups } from '@screens/index'
+import { Routes } from './src/routes'
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold })
 
   return (
     <ThemeProvider theme={theme}>
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"

@@ -10,7 +10,6 @@ module.exports = function (api) {
           alias: {
             '@assets': './src/assets',
             '@components': './src/components/index.ts',
-            '@routes': './src/screens',
             '@storage': './src/storage',
             '@screens': './src/screens/index.ts',
             '@utils': './src/utils',
